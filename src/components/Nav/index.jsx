@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { pages } from "./navData";

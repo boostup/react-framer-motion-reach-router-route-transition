@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { pages } from "./navData";
@@ -8,6 +8,10 @@ import "./Nav.css";
 
 export default () => {
   const [selected, setSelected] = useState(0);
+
+  const isActive = (args, i) => {
+    if (args && args.path.includes(args.url)) setSelected(i);
+  };
 
   return (
     <AnimateSharedLayout>
@@ -33,9 +37,13 @@ export default () => {
                     style={{ backgroundColor: color }}
                   />
                 )}
-                <Link to={path} {...sharedProps}>
+                <NavLink
+                  to={path}
+                  isActive={(args) => isActive(args, i)}
+                  {...sharedProps}
+                >
                   {label}
-                </Link>
+                </NavLink>
               </motion.li>
             );
           })}

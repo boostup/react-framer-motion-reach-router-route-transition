@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { pages } from "./navData";
@@ -20,9 +20,10 @@ export default () => {
             };
             return (
               <motion.li
-                animate
+                animate={{ color: i === selected ? color : "#333" }}
+                layout
                 key={i}
-                {...sharedProps}
+                className={`label ${i === selected && "selected"}`}
                 onClick={() => setSelected(i)}
               >
                 {i === selected && (

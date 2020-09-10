@@ -1,6 +1,6 @@
 import React from "react";
 import FramerItem from "../components/FramerItem";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 
 export default (props) => {
   return (

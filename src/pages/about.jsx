@@ -1,12 +1,12 @@
 import React from "react";
 import FramerItem from "../components/FramerItem";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 
 export default (props) => {
   return (
     <FramerItem isContainer>
       <FramerItem>
-        <Link to="/about">Go Home</Link>
+        <Link to="/">Go Home</Link>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
           distinctio tenetur autem? Repudiandae necessitatibus fuga quia
@@ -15,7 +15,7 @@ export default (props) => {
         </p>
       </FramerItem>
       <FramerItem>
-        <Link to="/about">Go Home too !</Link>
+        <Link to="/">Go Home too !</Link>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
           distinctio tenetur autem? Repudiandae necessitatibus fuga quia

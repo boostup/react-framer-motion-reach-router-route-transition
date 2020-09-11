@@ -6,7 +6,7 @@ export default (props) => {
   return (
     <FramerItem isContainer>
       <FramerItem>
-        <Link to="/threeeee">Go to Threeee page</Link>
+        <Link to="/threeeee/">Go to Threeee page</Link>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
           distinctio tenetur autem? Repudiandae necessitatibus fuga quia

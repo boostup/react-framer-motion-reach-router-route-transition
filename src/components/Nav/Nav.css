@@ -8,19 +8,18 @@
 
 .Nav ol {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .Nav .label {
-  font-size: 32px;
-  margin-left: 20px;
+  font-size: 1.3rem;
   position: relative;
-  cursor: pointer;
+  text-align: center;
 }
 
 .Nav .label.selected {
-  font-size: 64px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .Nav .underline {
@@ -29,12 +28,39 @@
   border-radius: 4px;
   background: black;
   position: absolute;
-  bottom: -4px;
-  left: 10px;
+  bottom: -6px;
 }
 
 .Nav ol {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .Nav ol {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Nav .label {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .Nav .label.selected {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .Nav .label {
+    font-size: 3rem;
+  }
+
+  .Nav .label.selected {
+    font-size: 5rem;
+  }
 }

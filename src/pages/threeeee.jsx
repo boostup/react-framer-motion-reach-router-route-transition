@@ -6,7 +6,7 @@ export default (props) => {
   return (
     <FramerItem isContainer>
       <FramerItem>
-        <Link to="/about">About</Link>
+        <Link to="/about/">Go to About page</Link>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
           distinctio tenetur autem? Repudiandae necessitatibus fuga quia
@@ -15,7 +15,7 @@ export default (props) => {
         </p>
       </FramerItem>
       <FramerItem>
-        <Link to="/about">About too ;)</Link>
+        <Link to="/about">Go to About page too ;)</Link>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
           distinctio tenetur autem? Repudiandae necessitatibus fuga quia
